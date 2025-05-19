@@ -89,7 +89,7 @@ jobs:
           # на сервере и в docker-compose.yml не указывать версию
           tags: lylez777/taski_backend:latest 
 
-    frontend_tests:
+  frontend_tests:
     runs-on: ubuntu-latest
 
     steps:
@@ -153,7 +153,7 @@ jobs:
           # Тут вместо username должен быть ваш логин на Docker Hub
           tags: lylez777/taski_gateway:latest
 
-    send_message:
+  send_message:
     runs-on: ubuntu-latest
     needs:
       - build_and_push_to_docker_hub
